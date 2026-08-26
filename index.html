@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NAEC აბიტურიენტთა ანალიზატორი 2026 🎓</title>
+    <title>sadmovxvdi.ge - სად მოვხვდი? 🎓</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Noto Sans Georgian შრიფტი -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700&display=swap" rel="stylesheet">\n    <style>
         body {
             font-family: 'Noto Sans Georgian', sans-serif;
         }
@@ -21,13 +20,13 @@
         <div class="absolute inset-0 bg-grid-white/[0.05] bg-[size:20px_20px]"></div>
         <div class="relative z-10 max-w-4xl mx-auto">
             <span class="bg-indigo-500/30 text-indigo-200 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase mb-3 inline-block border border-indigo-500/20">აბიტურიენტების ცნობარი 2026</span>
-            <h1 class="text-3xl md:text-4xl font-bold tracking-tight mb-2">🎓 NAEC ანალიზატორი (ვერსია 2.0)</h1>
-            <p class="text-indigo-200 text-sm md:text-base max-w-lg mx-auto">გაიგე მომენტალურად, სად ირიცხები რეალურად პრიორიტეტების მიხედვით და რომელია შენი ყველაზე უსაფრთხო რეზერვი!</p>
+            <h1 class="text-3xl md:text-4xl font-bold tracking-tight mb-2">🎓 sadmovxvdi.ge</h1>
+            <p class="text-indigo-200 text-sm md:text-base max-w-lg mx-auto">გაიგე მომენტალურად, სად ირიცხები რეალურად შენი პრიორიტეტების მიხედვით!</p>
         </div>
     </header>
 
     <main class="max-w-4xl mx-auto px-4 mt-8">
-
+        
         <!-- დაცულობის შეტყობინება -->
         <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-4 mb-6 flex items-start gap-3">
             <div class="p-2 bg-emerald-500 text-white rounded-lg mt-0.5 shadow-sm">
@@ -43,7 +42,7 @@
         <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 mb-8">
             <label class="block text-sm font-semibold text-slate-700 mb-2">1. ჩასვი პირადი გვერდიდან დაკოპირებული ტექსტი:</label>
             <textarea id="rawText" class="w-full h-44 p-4 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-sm bg-slate-50/50" placeholder="მაგალითად:&#10;არჩევანი: 2&#10;0010150&#10;საკონ. ქულა: 1808.7&#10;გამს. ქულა: 1957.8&#10;..."></textarea>
-
+            
             <div class="mt-4 flex flex-col sm:flex-row gap-3">
                 <button onclick="analyzeData()" class="flex-1 bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white py-3 px-6 rounded-2xl font-semibold transition-all duration-150 shadow-md hover:shadow-lg hover:shadow-indigo-500/10 flex items-center justify-center gap-2">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
@@ -57,47 +56,28 @@
 
         <!-- შედეგების პანელი (იმალება სანამ ტექსტი არ ჩაიწერება) -->
         <div id="resultsContainer" class="hidden space-y-8">
-
+            
             <!-- სწრაფი შეჯამების ბლოკი (ლოგიკური ანალიზი) -->
             <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100">
                 <h3 class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
-                    <span>⚡ ინტელექტუალური შეჯამება</span>
+                    <span>⚡ სავარაუდო ჩარიცხვის ადგილი</span>
                 </h3>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <!-- რეალური ჩარიცხვის ადგილი -->
-                    <div class="bg-gradient-to-br from-emerald-50 to-teal-50/50 border border-emerald-100 rounded-2xl p-5 relative overflow-hidden">
-                        <span class="absolute top-4 right-4 text-3xl">🎫</span>
-                        <span class="text-[10px] uppercase tracking-wider text-emerald-800 font-bold bg-emerald-100 px-2.5 py-1 rounded-full">სავარაუდო ჩარიცხვა</span>
-                        <h4 id="summaryRealUni" class="font-bold text-slate-800 mt-4 text-base leading-tight">კავკასიის უნივერსიტეტი</h4>
-                        <p id="summaryRealProg" class="text-xs text-slate-600 mt-1">ბიზნესის ადმინისტრირება</p>
-                        <div class="mt-4 pt-3 border-t border-emerald-100/50 flex justify-between items-center text-xs">
-                            <span class="text-slate-500">პრიორიტეტი (არჩევანი):</span>
-                            <span id="summaryRealChoice" class="font-bold text-slate-700">#5</span>
-                        </div>
-                        <div class="mt-1 flex justify-between items-center text-xs">
-                            <span class="text-slate-500">უსაფრთხოების მარჟა:</span>
-                            <span id="summaryRealMargin" class="font-bold text-emerald-600">+20.9 ქულა</span>
-                        </div>
-                        <p class="text-[10px] text-emerald-700/80 mt-3 italic leading-relaxed">💡 NAEC-ის წესით, რადგან ეს არის შენი პირველივე გამსვლელი არჩევანი, რეალურად აქ ჩაირიცხები და მომდევნო ვარიანტები ავტომატურად გაუქმდება.</p>
+                
+                <!-- რეალური ჩარიცხვის ადგილი (სრულ სიგანეზე) -->
+                <div class="bg-gradient-to-br from-emerald-50 to-teal-50/50 border border-emerald-100 rounded-3xl p-6 relative overflow-hidden">
+                    <span class="absolute top-6 right-6 text-4xl">🎫</span>
+                    <span class="text-xs uppercase tracking-wider text-emerald-800 font-bold bg-emerald-100 px-3 py-1.5 rounded-full">ჩარიცხვის საგზური</span>
+                    <h4 id="summaryRealUni" class="font-extrabold text-slate-800 mt-6 text-xl leading-tight">კავკასიის უნივერსიტეტი</h4>
+                    <p id="summaryRealProg" class="text-sm text-slate-600 mt-2">ბიზნესის ადმინისტრირება</p>
+                    <div class="mt-6 pt-4 border-t border-emerald-100/50 flex justify-between items-center text-sm">
+                        <span class="text-slate-500">პრიორიტეტი (არჩევანი):</span>
+                        <span id="summaryRealChoice" class="font-bold text-slate-700">#5</span>
                     </div>
-
-                    <!-- ყველაზე უსაფრთხო რეზერვი -->
-                    <div class="bg-gradient-to-br from-indigo-50 to-blue-50/50 border border-indigo-100 rounded-2xl p-5 relative overflow-hidden">
-                        <span class="absolute top-4 right-4 text-3xl">🛡️</span>
-                        <span class="text-[10px] uppercase tracking-wider text-indigo-800 font-bold bg-indigo-100 px-2.5 py-1 rounded-full">ყველაზე უსაფრთხო რეზერვი</span>
-                        <h4 id="summarySafeUni" class="font-bold text-slate-800 mt-4 text-base leading-tight">ალტერბრიჯი</h4>
-                        <p id="summarySafeProg" class="text-xs text-slate-600 mt-1">ბიზნესის ადმინისტრირება და ციფრული მენეჯმენტი</p>
-                        <div class="mt-4 pt-3 border-t border-indigo-100/50 flex justify-between items-center text-xs">
-                            <span class="text-slate-500">პრიორიტეტი (არჩევანი):</span>
-                            <span id="summarySafeChoice" class="font-bold text-slate-700">#19</span>
-                        </div>
-                        <div class="mt-1 flex justify-between items-center text-xs">
-                            <span class="text-slate-500">მაქსიმალური მარჟა:</span>
-                            <span id="summarySafeMargin" class="font-bold text-indigo-600">+142.8 ქულა</span>
-                        </div>
-                        <p class="text-[10px] text-indigo-700/80 mt-3 italic leading-relaxed">🔒 აქ გაქვს ყველაზე მაღალი უპირატესობა გამსვლელ ბარიერთან მიმართებაში. თუმცა აქ მხოლოდ იმ შემთხვევაში მოხვდებოდი, წინა არჩევნები რომ არ შეგევსო.</p>
+                    <div class="mt-2 flex justify-between items-center text-sm">
+                        <span class="text-slate-500">უსაფრთხოების მარჟა:</span>
+                        <span id="summaryRealMargin" class="font-bold text-emerald-600">+20.9 ქულა</span>
                     </div>
+                    <p class="text-xs text-emerald-700/90 mt-4 italic leading-relaxed">💡 NAEC-ის წესით, რადგან ეს არის შენი პირველივე გამსვლელი არჩევანი, რეალურად აქ ჩაირიცხები და მომდევნო ვარიანტები ავტომატურად გაუქმდება.</p>
                 </div>
             </div>
 
@@ -142,52 +122,42 @@
                     <!-- ვიზუალური ბარათი -->
                     <div id="storyCard" class="w-full max-w-[320px] aspect-[9/16] rounded-3xl p-6 text-white flex flex-col justify-between shadow-xl transition-all duration-300 relative overflow-hidden bg-gradient-to-br from-indigo-900 via-purple-900 to-indigo-950">
                         <div class="absolute inset-0 bg-grid-white/[0.03] bg-[size:15px_15px]"></div>
-
+                        
                         <!-- ზედა ლოგო -->
                         <div class="relative z-10 flex justify-between items-center">
-                            <span class="text-[10px] uppercase tracking-widest font-bold opacity-60">NAEC 2026 / ჩემი შედეგები</span>
+                            <span class="text-[10px] uppercase tracking-widest font-bold opacity-60">sadmovxvdi.ge / შედეგები</span>
                             <span class="text-lg">🎓</span>
                         </div>
 
                         <!-- შუა სტატისტიკა -->
-                        <div class="relative z-10 my-auto text-center py-4 space-y-4">
+                        <div class="relative z-10 my-auto text-center py-4 space-y-6">
                             <div>
-                                <p class="text-[10px] uppercase tracking-wider font-semibold opacity-75 mb-0.5">მწვანე ბარიერი გადავლახე</p>
-                                <h2 id="storyPassedCount" class="text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-emerald-300 to-teal-200">12</h2>
-                                <p class="text-[11px] font-semibold text-emerald-300">საგანმანათლებლო პროგრამაზე! ✅</p>
+                                <p class="text-[11px] uppercase tracking-wider font-semibold opacity-75 mb-0.5">ბარიერი გადავლახე</p>
+                                <h2 id="storyPassedCount" class="text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-emerald-300 to-teal-200">12</h2>
+                                <p class="text-xs font-semibold text-emerald-300">საგანმანათლებლო პროგრამაზე! ✅</p>
                             </div>
 
                             <!-- სავარაუდო ჩარიცხვა -->
-                            <div class="bg-white/5 border border-white/10 rounded-2xl p-3.5 text-left">
-                                <span class="text-[8px] uppercase tracking-wider text-emerald-300 font-bold bg-emerald-500/20 px-2 py-0.5 rounded-md">🎫 სავარაუდო ჩარიცხვა:</span>
-                                <p id="storyRealUniLabel" class="text-xs font-bold mt-1 text-white truncate">კავკასიის უნივერსიტეტი</p>
-                                <p id="storyRealProgLabel" class="text-[10px] text-indigo-100 mt-0.5 line-clamp-1">ბიზნესის ადმინისტრირება</p>
-                                <div class="flex justify-between items-center mt-2 text-[9px] border-t border-white/5 pt-1.5">
-                                    <span class="opacity-60">არჩევანი:</span>
-                                    <span id="storyRealChoiceLabel" class="text-white font-bold">#5</span>
-                                    <span class="opacity-60">სხვაობა:</span>
-                                    <span id="storyRealMarginLabel" class="text-emerald-300 font-bold">+20.9</span>
-                                </div>
-                            </div>
-
-                            <!-- საიმედო რეზერვი -->
-                            <div class="bg-white/5 border border-white/10 rounded-2xl p-3.5 text-left">
-                                <span class="text-[8px] uppercase tracking-wider text-indigo-300 font-bold bg-indigo-500/20 px-2 py-0.5 rounded-md">🛡️ საიმედო რეზერვი:</span>
-                                <p id="storySafeUniLabel" class="text-xs font-bold mt-1 text-white truncate">ალტერბრიჯი</p>
-                                <p id="storySafeProgLabel" class="text-[10px] text-indigo-100 mt-0.5 line-clamp-1">ბიზნესის ადმინისტრირება</p>
-                                <div class="flex justify-between items-center mt-2 text-[9px] border-t border-white/5 pt-1.5">
-                                    <span class="opacity-60">არჩევანი:</span>
-                                    <span id="storySafeChoiceLabel" class="text-white font-bold">#19</span>
-                                    <span class="opacity-60">მარჟა:</span>
-                                    <span id="storySafeMarginLabel" class="text-indigo-300 font-bold">+142.8</span>
+                            <div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-left">
+                                <span class="text-[9px] uppercase tracking-wider text-emerald-300 font-bold bg-emerald-500/20 px-2.5 py-1 rounded-md">🎫 სავარაუდო ჩარიცხვა:</span>
+                                <p id="storyRealUniLabel" class="text-sm font-bold mt-2 text-white truncate">კავკასიის უნივერსიტეტი</p>
+                                <p id="storyRealProgLabel" class="text-xs text-indigo-100 mt-1 line-clamp-2">ბიზნესის ადმინისტრირება</p>
+                                <div class="flex justify-between items-center mt-3 text-xs border-t border-white/5 pt-2">
+                                    <div>
+                                        <span class="opacity-60">არჩევანი:</span>
+                                        <span id="storyRealChoiceLabel" class="text-white font-bold">#5</span>
+                                    </div>
+                                    <div>
+                                        <span class="opacity-60">მარჟა:</span>
+                                        <span id="storyRealMarginLabel" class="text-emerald-300 font-bold">+20.9</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- ქვედა ნაწილი -->
                         <div class="relative z-10 text-center border-t border-white/10 pt-3">
-                            <p class="text-[9px] opacity-50">გააანალიზე შენი ქულები აქ:</p>
-                            <p class="text-[11px] font-bold text-indigo-300 mt-0.5">შენი-საიტი.netlify.app</p>
+                            <p class="text-xs font-bold text-indigo-300 mt-0.5">sadmovxvdi.ge 🎓</p>
                         </div>
                     </div>
 
@@ -218,11 +188,24 @@
 
         </div>
 
-    </main>
+        </main>
+
+    <!-- Footer & Counter -->
+    <footer class="mt-12 text-center text-slate-400 text-xs space-y-3 pb-8">
+        <p>© 2026 sadmovxvdi.ge</p>
+        <div id="counterSection" class="hidden inline-flex items-center gap-2 bg-slate-100 border border-slate-200/60 rounded-full px-4 py-1.5 shadow-sm text-slate-600 font-medium mx-auto">
+            <span class="flex h-2 w-2 relative">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            <span>საიტის ვიზიტორი: <span id="visitorCount" class="font-bold text-slate-800">...</span></span>
+        </div>
+    </footer>
 
     <!-- მონაცემთა ბაზა (ჩაშენებულია პირდაპირ კოდში) -->
     <script>
         const UNIVERSITY_DATABASE = {
+{
     "2040102": {
         "uni": "NEU ეროვნული საგანმანათლებლო უნივერსიტეტი",
         "program": "ბიზნესის ადმინისტრირება (ინგლისურენოვანი)",
@@ -5563,7 +5546,8 @@
         "seats": 30,
         "fee": 2500,
         "lang": "Georgian"
-            }
+    }
+}
         };
 
         let parsedChoices = [];
@@ -5571,30 +5555,7 @@
 
         // ნიმუშის ჩატვირთვა
         function loadSample() {
-            const sampleText = `არჩევანი: 2
-0010150
-საკონ. ქულა: 1808.7
-გამს. ქულა: 1957.8
-
-არჩევანი: 5
-1220101
-საკონ. ქულა: 1842.9
-გამს. ქულა: 1822.0
-
-არჩევანი: 10
-1430101
-საკონ. ქულა: 1818.4
-გამს. ქულა: 1690.0
-
-არჩევანი: 19
-1980103
-საკონ. ქულა: 1818.4
-გამს. ქულა: 1675.6
-
-არჩევანი: 12
-0640116
-საკონ. ქულა: 1825.8
-გამს. ქულა: 1810.9`;
+            const sampleText = `არჩევანი: 2\n0010150\nსაკონ. ქულა: 1808.7\nგამს. ქულა: 1957.8\n\nარჩევანი: 5\n1220101\nსაკონ. ქულა: 1842.9\nგამს. ქულა: 1822.0\n\nარჩევანი: 10\n1430101\nსაკონ. ქულა: 1818.4\nგამს. ქულა: 1690.0\n\nარჩევანი: 19\n1980103\nსაკონ. ქულა: 1818.4\nგამს. ქულა: 1675.6\n\nარჩევანი: 12\n0640116\nსაკონ. ქულა: 1825.8\nგამს. ქულა: 1810.9`;
             document.getElementById('rawText').value = sampleText;
         }
 
@@ -5607,30 +5568,30 @@
             }
 
             parsedChoices = [];
-
+            
             // ტექსტის დაყოფა "არჩევანი:"-ს მიხედვით
             const blocks = rawText.split(/არჩევანი:\s*/i);
-
+            
             blocks.forEach(block => {
                 if (!block.trim()) return;
-
+                
                 // არჩევანის ნომრის ამოღება
                 const choiceMatch = block.match(/^(\d+)/);
                 if (!choiceMatch) return;
                 const choiceNum = parseInt(choiceMatch[1]);
-
+                
                 // 7-ნიშნა კოდის პოვნა
-                const codeMatch = block.match(/(?:^|\s)(0\d{6}|1\d{6})(?:\s|$)/);
+                const codeMatch = block.match(/(?:^|\s)(\d{7})(?:\s|$)/);
                 const code = codeMatch ? codeMatch[1] : null;
-
+                
                 // საკონკურსო ქულის პოვნა
                 const sakonMatch = block.match(/საკონ\.\s*ქულა:\s*([\d.]+)/i);
                 const sakon = sakonMatch ? parseFloat(sakonMatch[1]) : null;
-
+                
                 // გამსვლელი ქულის პოვნა
                 const gamsMatch = block.match(/გამს\.\s*ქულა:\s*([\d.]+)/i);
                 const gams = gamsMatch ? parseFloat(gamsMatch[1]) : null;
-
+                
                 if (code) {
                     const dbInfo = UNIVERSITY_DATABASE[code] || {
                         "uni": "უცნობი უნივერსიტეტი (კოდი: " + code + ")",
@@ -5639,7 +5600,7 @@
                         "fee": "N/A",
                         "lang": "ქართული"
                     };
-
+                    
                     parsedChoices.push({
                         choice: choiceNum,
                         code: code,
@@ -5661,24 +5622,21 @@
                 return;
             }
 
-            // დავალაგოთ არჩევანის ნომრის მიხედვით (ზრდადობით), რათა პრიორიტეტები სწორად განისაზღვროს
+            // დავალაგოთ არჩევანის ნომრის მიხედვით (ზრდადობით)
             parsedChoices.sort((a, b) => a.choice - b.choice);
 
             // სტატისტიკის განახლება
             const totalPassed = parsedChoices.filter(c => c.passed).length;
             document.getElementById('statsLabel').innerText = `ნაჩვენებია ${parsedChoices.length} არჩევანიდან (მწვანე ბარიერი გადალახულია: ${totalPassed}-ზე)`;
-
+            
             // სთორი ბარათის მონაცემების განახლება
             document.getElementById('storyPassedCount').innerText = totalPassed;
-
+            
             const passedOnly = parsedChoices.filter(c => c.passed);
-
+            
             if (passedOnly.length > 0) {
                 // 1. სავარაუდო ჩარიცხვა: პირველივე გამსვლელი არჩევანი პრიორიტეტის რიგითობით (უკვე დალაგებულია)
                 const realChoice = passedOnly[0];
-
-                // 2. ყველაზე უსაფრთხო რეზერვი: მაქსიმალური დადებითი სხვაობის მქონე პროგრამა
-                const safeChoice = passedOnly.reduce((max, c) => c.margin > max.margin ? c : max, passedOnly[0]);
 
                 // განვაახლოთ სწრაფი შეჯამების ბლოკი
                 document.getElementById('summaryRealUni').innerText = realChoice.uni;
@@ -5686,21 +5644,11 @@
                 document.getElementById('summaryRealChoice').innerText = `#${realChoice.choice}`;
                 document.getElementById('summaryRealMargin').innerText = `+${realChoice.margin} ქულა`;
 
-                document.getElementById('summarySafeUni').innerText = safeChoice.uni;
-                document.getElementById('summarySafeProg').innerText = safeChoice.program;
-                document.getElementById('summarySafeChoice').innerText = `#${safeChoice.choice}`;
-                document.getElementById('summarySafeMargin').innerText = `+${safeChoice.margin} ქულა`;
-
                 // განვაახლოთ სთორი ბარათი
                 document.getElementById('storyRealUniLabel').innerText = realChoice.uni;
                 document.getElementById('storyRealProgLabel').innerText = realChoice.program;
                 document.getElementById('storyRealChoiceLabel').innerText = `#${realChoice.choice}`;
                 document.getElementById('storyRealMarginLabel').innerText = `+${realChoice.margin}`;
-
-                document.getElementById('storySafeUniLabel').innerText = safeChoice.uni;
-                document.getElementById('storySafeProgLabel').innerText = safeChoice.program;
-                document.getElementById('storySafeChoiceLabel').innerText = `#${safeChoice.choice}`;
-                document.getElementById('storySafeMarginLabel').innerText = `+${safeChoice.margin}`;
 
             } else {
                 // თუ მწვანე ბარიერი არსად არ გადაილახა
@@ -5709,21 +5657,11 @@
                 document.getElementById('summaryRealChoice').innerText = "-";
                 document.getElementById('summaryRealMargin').innerText = "0";
 
-                document.getElementById('summarySafeUni').innerText = "არ მოიძებნა";
-                document.getElementById('summarySafeProg').innerText = "-";
-                document.getElementById('summarySafeChoice').innerText = "-";
-                document.getElementById('summarySafeMargin').innerText = "0";
-
                 // სთორი
                 document.getElementById('storyRealUniLabel').innerText = "ვერ ჩაირიცხე";
                 document.getElementById('storyRealProgLabel').innerText = "არჩევნები ვერ განხორციელდა";
                 document.getElementById('storyRealChoiceLabel').innerText = "-";
                 document.getElementById('storyRealMarginLabel').innerText = "0";
-
-                document.getElementById('storySafeUniLabel').innerText = "-";
-                document.getElementById('storySafeProgLabel').innerText = "-";
-                document.getElementById('storySafeChoiceLabel').innerText = "-";
-                document.getElementById('storySafeMarginLabel').innerText = "0";
             }
 
             // ჩვენება და რენდერი
@@ -5747,18 +5685,18 @@
                 return;
             }
 
-            // ვიპოვოთ პირველივე გამსვლელი, რათა დავადოთ სპეციალური "სავარაუდო ჩარიცხვის" ბეიჯი თავად ბარათსაც!
+            // ვიპოვოთ პირველივე გამსვლელი
             const passedOnly = parsedChoices.filter(c => c.passed);
             const firstPassedChoiceNum = passedOnly.length > 0 ? passedOnly[0].choice : -1;
 
             filtered.forEach(item => {
                 const card = document.createElement('div');
                 const isRealTarget = item.choice === firstPassedChoiceNum;
-
+                
                 card.className = `bg-white rounded-2xl p-5 border shadow-sm transition-all duration-200 hover:shadow-md ${isRealTarget ? 'border-emerald-400 ring-2 ring-emerald-100' : (item.passed ? 'border-emerald-100 hover:border-emerald-200' : 'border-slate-100')}`;
-
+                
                 // მწვანე ან წითელი ბეიჯი
-                let statusBadge = item.passed
+                let statusBadge = item.passed 
                     ? `<span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-1 rounded-full flex items-center gap-1">🎉 გადიხარ (+${item.margin})</span>`
                     : `<span class="bg-rose-100 text-rose-800 text-[10px] font-bold px-2.5 py-1 rounded-full flex items-center gap-1">❌ ვერ გადიხარ (${item.margin})</span>`;
 
@@ -5773,7 +5711,7 @@
                     </div>
                     <h4 class="font-bold text-slate-800 text-sm leading-tight mb-1">${item.uni}</h4>
                     <p class="text-xs text-slate-600 line-clamp-2 mb-4">${item.program}</p>
-
+                    
                     <div class="grid grid-cols-2 gap-2 border-t border-slate-50 pt-3 text-[11px]">
                         <div>
                             <span class="text-slate-400 block">წლიური საფასური</span>
@@ -5817,19 +5755,16 @@
         function copySocialText() {
             if (parsedChoices.length === 0) return;
             const totalPassed = parsedChoices.filter(c => c.passed).length;
-
-            let textToCopy = `🎉 ჩემი NAEC-ის შედეგების ანალიზი: ${parsedChoices.length} არჩევანიდან მწვანე ბარიერი გადავლახე ${totalPassed} ფაკულტეტზე! 🥳\n\n`;
-
+            
+            let textToCopy = `🎉 ჩემი NAEC-ის შედეგების ანალიზი: ${parsedChoices.length} არჩევანიდან მწვანე ბარიერი გადავლახე ${totalPassed} საგანმანათლებლო პროგრამაზე! 🥳\n\n`;
+            
             const passedOnly = parsedChoices.filter(c => c.passed);
             if (passedOnly.length > 0) {
                 const realChoice = passedOnly[0];
-                const safeChoice = passedOnly.reduce((max, c) => c.margin > max.margin ? c : max, passedOnly[0]);
-
-                textToCopy += `🎫 სავარაუდო ჩარიცხვა: ${realChoice.uni} (არჩევანი #${realChoice.choice}, სხვაობა: +${realChoice.margin} ქულა)\n`;
-                textToCopy += `🛡️ ყველაზე უსაფრთხო რეზერვი: ${safeChoice.uni} (არჩევანი #${safeChoice.choice}, სხვაობა: +${safeChoice.margin} ქულა)\n`;
+                textToCopy += `🎫 სავარაუდო ჩარიცხვა: ${realChoice.uni} (არჩევანი #${realChoice.choice}, სხვაობა: +${realChoice.margin} ქულა) 🎓\n`;
             }
-
-            textToCopy += `\nშეამოწმე შენი შედეგები შენც აქ: [https://bachoge.github.io/naec-analyzer/] 🎓`;
+            
+            textToCopy += `\nშეამოწმე შენი შედეგები შენც აქ: sadmovxvdi.ge 🚀`;
 
             navigator.clipboard.writeText(textToCopy).then(() => {
                 alert("გასაზიარებელი ტექსტი კოპირებულია ბუფერში! შეგიძლიათ ჩასვათ ფეისბუქზე ან ჩატში.");
@@ -5841,7 +5776,7 @@
         // CSV ექსპორტი
         function exportToCSV() {
             if (parsedChoices.length === 0) return;
-
+            
             let csvContent = "\ufeffარჩევანი,უნივერსიტეტი,პროგრამა,საკონკურსო ქულა,გამსვლელი ქულა,სხვაობა,გადიხართ\n";
             parsedChoices.forEach(item => {
                 const passedStr = item.passed ? "კი" : "არა";
@@ -5866,32 +5801,42 @@
             const card = document.getElementById('storyCard');
             const passedLabel = document.getElementById('storyPassedCount');
             const marginLabelReal = document.getElementById('storyRealMarginLabel');
-            const marginLabelSafe = document.getElementById('storySafeMarginLabel');
-
+            
             card.className = "w-full max-w-[320px] aspect-[9/16] rounded-3xl p-6 text-white flex flex-col justify-between shadow-xl transition-all duration-300 relative overflow-hidden";
-
+            
             if (theme === 'cosmic') {
                 card.classList.add('bg-gradient-to-br', 'from-indigo-900', 'via-purple-900', 'to-indigo-950');
                 passedLabel.className = "text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-emerald-300 to-teal-200";
                 marginLabelReal.className = "text-emerald-300 font-bold";
-                marginLabelSafe.className = "text-indigo-300 font-bold";
             } else if (theme === 'emerald') {
                 card.classList.add('bg-gradient-to-br', 'from-emerald-950', 'via-teal-900', 'to-emerald-900');
                 passedLabel.className = "text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-amber-300 to-yellow-200";
                 marginLabelReal.className = "text-amber-300 font-bold";
-                marginLabelSafe.className = "text-teal-300 font-bold";
             } else if (theme === 'sunset') {
                 card.classList.add('bg-gradient-to-br', 'from-amber-600', 'via-rose-700', 'to-purple-950');
                 passedLabel.className = "text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 to-orange-200";
                 marginLabelReal.className = "text-yellow-200 font-bold";
-                marginLabelSafe.className = "text-amber-200 font-bold";
             }
-
+            
             // კვლავ დავამატოთ ბადე
             const gridDiv = document.createElement('div');
             gridDiv.className = "absolute inset-0 bg-grid-white/[0.03] bg-[size:15px_15px]";
             card.appendChild(gridDiv);
         }
+            // Counter API Integration
+        async function initCounter() {
+            try {
+                const response = await fetch('https://api.counterapi.dev/v1/sadmovxvdi/global/up');
+                const data = await response.json();
+                if (data && data.count) {
+                    document.getElementById('visitorCount').innerText = data.count.toLocaleString();
+                    document.getElementById('counterSection').classList.remove('hidden');
+                }
+            } catch (e) {
+                console.error("Counter failed:", e);
+            }
+        }
+        window.addEventListener('DOMContentLoaded', initCounter);
     </script>
 </body>
 </html>
